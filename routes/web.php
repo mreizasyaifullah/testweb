@@ -14,5 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('red');
+    // return view('main');
+    return redirect("ppti");
 });
+
+
+// Route::get('/{nameee}', function ($nameee) {
+//     //echo($nameee);
+//     return view('default', ['nameee'=>$nameee]);
+// });
+
+Route::view('/ppti', 'ppti');
+Route::view('/insinas', 'insinas');
